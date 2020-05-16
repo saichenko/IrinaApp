@@ -8,11 +8,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
-os.environ['SECRET_KEY']
-SECRET_KEY = os.environ['SECRET_KEY']
 
+#SECRET_KEY = os.environ['SECRET_KEY']
+SECRET_KEY = '2dihl^)!0(47@id8wyuqmk03b!7c&$i#57073qrdm8ch#2h4@1'
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*', '.herokuapp.com']
 
@@ -115,9 +115,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-STATICFILES_DIRS = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_DIRS = [(os.path.join(BASE_DIR, 'staticfiles'))]
 
 STATIC_URL = '/static/'
 
